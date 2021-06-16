@@ -1,0 +1,153 @@
+#tete{
+    display:flex;
+    justify-content: space-between;
+    background-color:black;
+    width: 101%;
+    height: 150px;
+}
+#text{
+    color:white ;
+    text-align:center;
+    margin-right:500px;
+    margin-top:50px;
+    font-family:fangsong;
+   
+    
+}
+
+
+#login .container #login-row #login-column #login-box {
+margin-top: 120px;
+max-width: 600px;
+height: 500px;
+border: 1px solid #9C9C9C;
+background-color: #EAEAEA;
+}
+
+#login .container #login-row #login-column #login-box #login-form #register-link {
+margin-top: -45px;
+
+}
+.ins:hover{
+color:black;
+margin-left:30px;
+font-family:serif;
+background-color:rgba(34,34,34,0.5);
+border-radius:15px;
+border-top:10px solid #C90017;
+width: 180px;
+}
+p{
+margin-left:30px;
+font-size:11px;
+
+}
+a{
+margin-left:200px;
+color: grey;
+margin-top:10px;
+
+}
+
+#hhh{
+
+background-color:red;
+height: 50px;
+width: 538px;
+margin-right:100px;
+}
+.formm{
+width: 250px;
+height: 45px;
+margin-left:20px;
+background-color:#f3eceb;
+border-radius:10px;
+
+}
+.fformm{
+width: 250px;
+height: 45px;
+margin-left:20px;
+background-color:#f3eceb;
+border-radius:10px;
+border:3px solid #C90017;
+box-shadow: 2px 1px 2px;
+}
+.formmm{
+background-color:#C90017;
+width: 110px;
+height: 50px;
+margin-left:15px;
+color:white;
+border-radius:10px;
+}
+.fichier{
+background-color:#C90017;
+width: 110px;
+height: 50px;
+margin-top:50px;
+color:white;
+border-radius:10px;
+}
+h2{
+margin-right:90px;
+}
+.forrm{
+color:white;
+text-align:center;
+
+}
+.container{
+margin-bottom:100px;
+}
+.foorm{
+
+margin-top: -900px;
+max-width: 600px;
+height: 810px;
+background-color: white;
+width: 500px;
+
+}
+
+.prenom{
+    color:black;
+    margin-left:25px;
+    font-family:monospace;
+}
+#idd{
+    display:flex;
+    justify-content:space-around;
+}
+.foto{
+    width: 85px;
+    height: 140px;
+}
+.fotoo{
+    width: 100%;
+    height:50%;
+}
+#trait{
+    width: 290px;
+    height: 2px;
+    background-color:#C5C5C5;
+}
+small{
+    color: red;
+    margin-left: 18px;
+    display: flex;
+}
+.prin{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    margin-left: 360px;
+    border:2px solid #C90017;
+}
+.ava{
+    display: block;
+}
+.clax{
+    margin-left: 340px;
+    font-size: 20px;
+}

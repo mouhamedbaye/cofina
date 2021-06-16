@@ -1,0 +1,80 @@
+[
+    {
+        "nom": "admin",
+        "prenom": "admin",
+        "datenaiss": "02\/04\/2000",
+        "sexe": "masculin feminin",
+        "login": "admin@mail.com",
+        "password": "admin@1",
+        "role": "ROLE_ADMIN"
+    },
+    {
+        "nom": "joueur",
+        "prenom": "joueur",
+        "datenaiss": "02\/04\/2000",
+        "sexe": "feminin",
+        "login": "joueur@mail.com",
+        "password": "joueur@1",
+        "role": "ROLE_JOUEUR"
+    },
+    {
+        "prenom": "baye",
+        "nom": "admin",
+        "login": "adugugmin@mail.com",
+        "password": "aaaaaa",
+        "confpassword": "aaaaaa",
+        "avatar": "",
+        "connexion": "Connexion",
+        "role": "ROLE_JOUEUR"
+    },
+    {
+        "prenom": "mouha",
+        "nom": "diouf",
+        "login": "aaa@gmail.com",
+        "password": "aaaaaa",
+        "confpassword": "aaaaaa",
+        "avatar": "",
+        "connexion": "Connexion",
+        "role": "ROLE_JOUEUR"
+    },
+    {
+        "prenom": "",
+        "nom": "",
+        "login": "",
+        "password": "",
+        "confpassword": "",
+        "avatar": "",
+        "connexion": "Connexion",
+        "role": "ROLE_JOUEUR"
+    },
+    {
+        "prenom": "baye",
+        "nom": "diouf",
+        "login": "papa@gmail.com",
+        "password": "zzzzzz",
+        "confpassword": "zzzzzz",
+        "avatar": "",
+        "connexion": "Connexion",
+        "role": "ROLE_JOUEUR"
+    },
+    {
+        "prenom": "ba",
+        "nom": "",
+        "login": "",
+        "password": "",
+        "confpassword": "",
+        "avatar": "",
+        "connexion": "Connexion",
+        "role": "ROLE_JOUEUR"
+    },
+    {
+        "prenom": "baye",
+        "nom": "diop",
+        "login": "diop@gmail.com",
+        "password": "dddddd",
+        "confpassword": "dddddd",
+        "avatar": "",
+        "connexion": "Connexion",
+        "role": "ROLE_JOUEUR"
+    }
+]
