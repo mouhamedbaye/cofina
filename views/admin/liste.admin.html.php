@@ -16,29 +16,23 @@
                 <div id="text"><h1> Le plaisir de jouer </h1></div>
             </div>
   <body>
-    <div class="container">
+      <div class="container">
       <div class="cards">
             <div class="car card-">
               CREER ET PARAMETREZ VOS QUIZZ
             </div>
-            <div class="deco">
-              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                  <?php if(est_connect()): ?>
-                  <li class="nav-item active">
-                      <a class="nav-link" href="<?php WEB_ROUTE. '?controlleurs=admin&views=deconnexion' ?>">DECONNEXION<span class="sr-only"></span></a>
-                  </li>
-
-                  <?php endif ?>
-              </ul>
-            </div>
+            
         </div>
           <div class="row">
             
               <?php require_once(ROUTE_DIR.'views/imc/menu.html.php')?>
-            
-            <div class="appell col-md-6">
+              <?php
+              $json = file_get_contents(ROUTE_DIR. 'data/user.data.json');
+              $arrayUser = json_decode($json, true);
+              ?>
+              <div class="appell col-md-6">
                     <div class="liste">
-                                <p class="text-center">LISTE DES JOUEURS PAR SCORE</p>
+                                <p class="text-center">LISTE DES ADMINS</p>
                     </div>
               <div class=" table-borderless ">
             
@@ -47,73 +41,23 @@
                       <tr>
                         
                         <th scope="col">NOM</th>
-                        <th scope="col">PRENOM</th>
-                        <th scope="col">SCORE</th>
+                        <th scope="col">PRENOM</th>&nbsp;
+                        <th scope="col">edit&delete</th>
                       </tr>
-                    
+                      <?php foreach($arrayUser as $user): ?>
+                      <?php if ($user['role'] == 'ROLE_ADMIN') : ?>
                       <tr>
                         
-                        <td>SAMBOU</td>
-                        <td>YAYA</td>
-                        <td>1022 pts</td>
+                        <td><?=$user['prenom'].''.$user[''] ?></td>
+                        <td><?=$user['nom'] ?>&nbsp;&nbsp;&nbsp;</td>
+                    
+                        <td>
+                        <a name="" id=""  class=" btn bns btn-success" href="<?= WEB_ROUTE . '?controlleurs=admin&views=edit&id=' . $user['id'] ?>" role="button">MODIFIER&nbsp;<i class="icon-edit"></i></a>
+                        <a name="" id=""  class="btn bt btn-danger" href="<?= WEB_ROUTE . '?controlleurs=admin&views=delete&id=' . $user['id'] ?>" role="button">SUPPRIMER&nbsp;<i class="icon-trash"></i></a>
+                        </td>
                       </tr>
-                      <tr>
-                       
-                        <td>WONE</td>
-                        <td>COUDY</td>
-                        <td>963 pts</td>
-                      </tr>
-                      <tr>
-                      
-                        <td>KANDJI</td>
-                        <td>DIAGNE</td>
-                        <td>877 pts</td>
-                      </tr>
-                     
-                        <td>NDIAYE</td>
-                        <td>BABACAR</td>
-                        <td>875 pts</td>
-                      </tr>
-                      
-                        <td>NIASS</td>
-                        <td>IMAM</td>
-                        <td>870 pts</td>
-                      </tr>
-                     
-                        <td>BARRO</td>
-                        <td>MAMADOU</td>
-                        <td>816 pts</td>
-                      </tr>
-                      
-                        <td>CISSE</td>
-                        <td>AMINA</td>
-                        <td>816 pts</td>
-                      </tr>
-                     
-                        <td>NDOYE</td>
-                        <td>DEMBA</td>
-                        <td>800 pts</td>
-                      </tr>
-                      
-                        <td>TRAORE</td>
-                        <td>PHENOMENE</td>
-                        <td>797 pts</td>
-                      </tr>
-                      
-                        <td>SEYNABOU</td>
-                        <td>KA</td>
-                        <td>763 pts</td>
-                      </tr>
-                      
-                        <td>MBAYE</td>
-                        <td>LIBASSE</td>
-                        <td>760 pts</td>
-                      </tr>
-                      
-                        <td>DIOUF</td>
-                        <td>MOUHAMED</td>
-                        <td>759 pts</td>
-                      </tr>
+                      <?php endif;?>
+                      <?php endforeach; ?>
                     </tbody>
                 </table> <br>
                 <div class="suivre">
@@ -126,7 +70,7 @@
           </div>
       </div>
       <style>
-         .suivre a{
+       .suivre a{
           color:white;
           margin-left:17px;
           margin-top:20px;
@@ -144,10 +88,10 @@ border-radius:10px;
           }
           .tablle{
             border:1px solid red;
-            width: 500px;
-            height: 500px;
+            width: 480px;
+            height: 360px;
             margin-top:30px;
-            margin-left:15px;
+            margin-left:70px;
           }
           .liste{
             margin-top:45px;
@@ -159,7 +103,7 @@ border-radius:10px;
             margin-top: 15px;
             background-color:white;
             border-radius:10px;
-            height: 700px;
+            height: 600px;
             margin-left:50px;
           }
  #tete{
@@ -205,9 +149,6 @@ border-radius:10px;
     margin-top:-15px;
     background-color: green;
     width: 128px;
-}
-.deco a{
-  color:white;
 }
       </style>
     <!-- Optional JavaScript -->

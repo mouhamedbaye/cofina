@@ -1,0 +1,67 @@
+
+.prinn{
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  margin-left: 18px;
+  border:2px solid white;
+    }
+    p{
+      margin-left: 100px;
+      margin-top: -25px;
+  }
+a{
+color:grey;
+}
+.appel{
+background-color:rgb(70, 66, 66);
+margin-left:55px;
+margin-top:50px;
+border-radius:2px;
+}
+
+.aap{
+  background-color:white;
+  height: 550px;
+  margin-left:50px;
+  margin-top:30px;
+  width: 1000px;
+}
+ .pluss{
+        margin-left:100px;
+        color: #C90017;
+        font-size: 25px;
+    }
+    .plusss{
+        margin-left:139px;
+        color: grey;
+        font-size: 25px;
+    }
+   .cre{
+    margin-left:146px;
+    color: grey;
+    font-size: 25px;
+    
+   }
+   .cree{
+    margin-left:132px;
+    color: grey;
+    font-size: 25px;
+   }
+   .plu{
+    margin-left:151px;
+    color: grey;
+    font-size: 25px;
+   }
+   
+   .pllu{
+    margin-left:118px;
+    color: grey;
+    font-size: 25px;
+   }
+.card{
+margin-left: -15px;
+width: 380px;
+height: 120px;
+background-color: #C90017;
+}

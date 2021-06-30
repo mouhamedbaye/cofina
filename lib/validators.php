@@ -4,6 +4,9 @@
 function est_vide(string $valeur): bool {
     return empty($valeur);
 }
+function est_vide1(string $chaine): bool {
+    return empty($chaine);
+}
 
 function est_entier($valeur): bool {
    // $entier = (int) $valeur;
@@ -17,6 +20,9 @@ function est_superieur(int $valeur): bool {
 
 function verif_taille(string $valeur):bool{
     return strlen($valeur)<=25;
+}
+function verif_taille2(string $valeur):bool{
+    return strlen($valeur)<=19;
 }
 function est_mail($valeur):bool{
     if(filter_var($valeur, FILTER_VALIDATE_EMAIL)){
@@ -50,5 +56,43 @@ function validation_login($valeur, string $key,array &$arrayError){
             return true;
         }
         return false;
+    }
+
+    function est_phrase(string $chaine):bool{
+        return $chaine;
+    }
+    function valide_phrase(string $text):bool{
+        return $text;
+    }
+    function valid_point($valeur, string $key, array &$arrayError){
+        if (est_vide($valeur)){
+            $arrayError[$key] = "le champ doit etre obligatoire";
+        }elseif ($valeur<=0){
+            $arrayError[$key]= "veiller saisir un nombre positif";
+        }
+    }
+    function valid_nbr_question($valeur, string $key, array &$arrayError){
+        if (est_vide($valeur)){
+            $arrayError[$key] = "le champ doit etre obligatoire";
+        }elseif ($valeur<=0){
+            $arrayError[$key]= "veiller saisir un nombre positif";
+        }
+    }
+    function valid_type_reponse($valeur, string $key, array &$arrayError){
+        if (est_vide($valeur)){
+            $arrayError[$key] = "le champ doit etre obligatoire";
+        }
+
+    }
+    function validation_input($valeur,string $key , &$error)/* :array */{
+        /* $error []; */
+        if (empty($valeur)){
+            $error[$key] = "Champ obligatoire";
+        }elseif (!is_numeric($valeur)) {
+            $error[$key] = "saisir une valeur entiere";
+        }elseif ($valeur <=0) {
+            $error[$key] = "saisir une valeur entiere";
+        }
+        return $error;
     }
 ?>

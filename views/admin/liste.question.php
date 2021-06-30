@@ -1,1 +1,0 @@
-<?php require_once(ROUTE_DIR.'views/imc/menu.html.php')?>

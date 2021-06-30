@@ -76,5 +76,26 @@
         "avatar": "",
         "connexion": "Connexion",
         "role": "ROLE_JOUEUR"
+    },
+    {
+        "prenom": "zeuzeul",
+        "nom": "gaye",
+        "login": "mouhaeraa@gmail.com",
+        "password": "12345678",
+        "confpassword": "12345678",
+        "avatar": "IMG_20191226_172031.jpg",
+        "connexion": "inscription",
+        "role": "ROLE_ADMIN"
+    },
+    {
+        "id": " ",
+        "prenom": "tintin",
+        "nom": "tin",
+        "login": "tintin1@gmail.com",
+        "password": "123456az",
+        "confpassword": "123456az",
+        "avatar": "",
+        "inscripion": "inscription",
+        "role": "ROLE_ADMIN"
     }
 ]
